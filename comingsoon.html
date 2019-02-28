@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('images/patricia-coroi-768-unsplash.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body onload="myFunction()">
+
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Logo</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p>35 days left</p>
+  </div>
+  <div class="bottomleft">
+    <p>Some text</p>
+  </div>
+</div>
+
+</body>
+    
+<script type="text/javascript">
+        function myFunction() {
+             var x = Math.floor((Math.random() * 3) + 0)
+             switch (x) {
+                  case 1:
+                    console.log(1);
+                    document.getElementById(".bgimg").style.backgroundImage = "url('images/dustin-scarpitti-967-unsplash.jpg')";
+                    break;
+                  case 2:
+                    console.log(2);
+                    document.getElementById("#bgimg").style.backgroundImage = "url('images/patricia-coroi-768-unsplash.jpg')";
+                    break;
+                  case 3:
+                    console.log(3);
+                    document.getElementById('bgimg').style.backgroundImage = "url('images/thomas-tixtaaz-119880-unsplash.jpg')";
+                    break;
+        }
+        }
+</script>
+</html>
