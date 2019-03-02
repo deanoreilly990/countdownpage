@@ -26,7 +26,9 @@ body, html {
 .bottomleft {
   position: absolute;
   bottom: 0;
-  left: 16px;
+  left: 10px;
+  font-size: 12px;
+
 }
 
 .middle {
@@ -47,7 +49,7 @@ hr {
 
 <div class="bgimg">
   <div class="topleft">
-    <p>Logo</p>
+    <p>Dean O'Reilly.com</p>
   </div>
   <div class="middle">
     <h1>COMING SOON</h1>
@@ -60,6 +62,7 @@ hr {
   </ul>
   </div>
   <div class="bottomleft">
+      Photo by Patricia Coroi on Unsplash
     <p></p> <!-- enter some text here -->
   </div>
 </div>
@@ -67,23 +70,6 @@ hr {
 </body>
     
 <script type="text/javascript">
-        function myFunction() {
-             var x = Math.floor((Math.random() * 3) + 0)
-             switch (x) {
-                  case 1:
-                    console.log(1);
-                    document.getElementById(".bgimg").style.backgroundImage = "url('images/dustin-scarpitti-967-unsplash.jpg')";
-                    break;
-                  case 2:
-                    console.log(2);
-                    document.getElementById("#bgimg").style.backgroundImage = "url('images/patricia-coroi-768-unsplash.jpg')";
-                    break;
-                  case 3:
-                    console.log(3);
-                    document.getElementById('bgimg').style.backgroundImage = "url('images/thomas-tixtaaz-119880-unsplash.jpg')";
-                    break;
-        }
-        }
     //countdown timer
     const second = 1000,
           minute = second * 60,
